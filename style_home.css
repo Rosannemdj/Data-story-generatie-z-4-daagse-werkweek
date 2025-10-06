@@ -97,8 +97,73 @@ h3 {
   font-size: 18px;
 }
 
+/*----------------------------
+introductie van de kampen
+----------------------------*/
+.main-info-row {
+  display: flex;
+  gap: 128px;
+  margin: 32px 32px;
+}
+
+.main-info-half {
+  flex: 1;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: #f5e0ce;
+  position: relative;
+  height: 700px;
+}
+
+.motto {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.motto2 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-top: 20px;
+  width: 240px;
+}
+
+.main-info-half,
+.bottom-text {
+  background: #f6ece3;
+  box-shadow: none;
+}
+
+.genz-img {
+  position: absolute;
+  right: -180px;
+  bottom: -150px;
+  width: 710px;
+  height: auto;
+  z-index: 2;
+}
+
+.genz-text {
+  width: 550px;
+}
+
+.genx-img {
+  position: absolute;
+  right: -90px;
+  bottom: -180px;
+  width: 710px;
+  height: auto;
+  z-index: 2;
+}
+
 /* ------------------------------------
-   Stats Sectie
+    Verschillende Proeven navigatie
 ------------------------------------ */
 .stats-section {
   background-image: url("Images/Achtergronden/Achtergrond2.png");
@@ -520,77 +585,6 @@ h3 {
 /* ------------------------------------
    Extra Layouts & Visuals
 ------------------------------------ */
-.main-info-row {
-  display: flex;
-  gap: 128px;
-  margin: 32px 32px;
-}
-
-.main-info-half {
-  flex: 1;
-  padding: 24px;
-  border-radius: 18px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  background: #f5e0ce;
-  position: relative;
-  height: 700px;
-}
-
-.motto {
-  text-align: left;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #5c4633;
-  margin-top: 20px;
-  width: 200px;
-}
-
-.motto2 {
-  text-align: left;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #5c4633;
-  margin-top: 20px;
-  width: 240px;
-}
-
-.main-info-half,
-.bottom-text,
-.conclusion-block {
-  background: #f6ece3;
-  box-shadow: none;
-}
-
-.conclusion-block {
-  background: #fff;
-  margin: 32px;
-  padding: 32px;
-  border-radius: 24px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  font-size: 1.15em;
-}
-
-.genz-img {
-  position: absolute;
-  right: -180px;
-  bottom: -150px;
-  width: 710px;
-  height: auto;
-  z-index: 2;
-}
-
-.genz-text {
-  width: 550px;
-}
-
-.genx-img {
-  position: absolute;
-  right: -90px;
-  bottom: -180px;
-  width: 710px;
-  height: auto;
-  z-index: 2;
-}
 
 .graph-iframe {
   width: 100%;
@@ -612,6 +606,17 @@ h3 {
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 64px;
+}
+
+.graph-iframe1 {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
 }
 
 /* ------------------------------------
@@ -637,4 +642,11 @@ h3 {
 
 html {
   scroll-behavior: smooth;
+}
+
+.conclusietekst {
+  flex: 1;
+  padding: 24px;
+  margin-left: 32px;
+  margin-top: 120px;
 }
