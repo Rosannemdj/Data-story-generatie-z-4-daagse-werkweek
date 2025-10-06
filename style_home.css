@@ -1,0 +1,640 @@
+/* ------------------------------------
+   Fonts & Basisstijl
+------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: #5c4633;
+}
+
+h1,
+h2,
+h3,
+.title {
+  font-family: "Fredoka", Arial, sans-serif;
+  font-weight: 700;
+}
+
+#titel {
+  font-size: 80px;
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  font-style: italic;
+  margin-top: -48px;
+  margin-left: 15px;
+}
+
+/* ------------------------------------
+   Header
+------------------------------------ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin-top: 0px;
+}
+
+.header-text {
+  flex: 2;
+  padding-right: 24px;
+  z-index: 1;
+  width: 600px;
+  margin-left: 15px;
+}
+
+.introplaatje {
+  position: relative;
+  z-index: -1;
+  max-width: 50%;
+  height: auto;
+  margin-top: 100px;
+}
+
+/* ------------------------------------
+   Navigatie
+------------------------------------ */
+.navbar {
+  padding: 0 32px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  margin-right: 32px;
+  z-index: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #5c4633;
+  font-weight: bold;
+  padding: 18px 0;
+  display: block;
+  font-size: 18px;
+}
+
+/* ------------------------------------
+   Stats Sectie
+------------------------------------ */
+.stats-section {
+  background-image: url("Images/Achtergronden/Achtergrond2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+  margin-top: 100px;
+}
+
+.stats-title,
+.stats-row {
+  position: relative;
+  z-index: 2;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 2px 24px;
+}
+
+.stats-title {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #5c4633;
+}
+
+.stat-block {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  height: 250px;
+}
+
+.stat-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid positionering voor de 5 blokken */
+.stat-block:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.stat-block:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.stat-block:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.stat-block:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* ------------------------------------
+   Bottom Secties
+------------------------------------ */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 128px;
+}
+
+.bottom-text {
+  flex: 1;
+  background: #fff;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 18px;
+  margin-right: 24px;
+}
+
+.bottom-text2 {
+  flex: 1;
+  padding: 24px;
+  border-radius: 18px;
+  margin-right: 24px;
+  margin-top: 200px;
+}
+
+.bottom-text3 {
+  flex: 1;
+  padding: 24px;
+  margin-left: 32px;
+  margin-top: 150px;
+}
+
+.bottom-text3 p {
+  width: 600px;
+  text-align: left;
+}
+
+.block-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #5c4633;
+}
+
+/* ------------------------------------
+   Grafieken & Legenda
+------------------------------------ */
+.graph-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.graph-title {
+  margin-bottom: -120px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.legend-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.color1 {
+  background-color: #f5e0ce;
+}
+
+.color2 {
+  background-color: #e3cbb6;
+}
+
+.color3 {
+  background-color: #d1b69e;
+}
+
+.bottom-text img {
+  width: 60%;
+  height: auto;
+  margin-left: 150px;
+}
+
+.proeftitel {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-bottom: 32px;
+}
+
+.graph-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.graph-img2 {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 200px;
+}
+
+.graph-source {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 8px;
+  width: 400px;
+}
+
+/* ------------------------------------
+   Proef 2 Sectie
+------------------------------------ */
+.proef2-section {
+  background-image: url("Images/Achtergronden/Achtergrond3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0;
+  width: 100%;
+  min-height: 110vh;
+  position: relative;
+  margin-top: -400px;
+}
+
+.proef2-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.proef2-block {
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 12px;
+  text-align: center;
+  width: 720px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.proef2-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -200px;
+}
+
+.proef2-image {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+}
+
+.productiviteit-img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 500px;
+  margin-right: 200px;
+}
+
+.proef2-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proef2-titel {
+  color: #8b5e3c;
+  margin-bottom: 0px;
+}
+
+.proef2-stat {
+  flex: 1;
+  margin: 20px 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.proef2-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b5e3c;
+  display: block;
+}
+
+.proef2-stat p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #5c4633;
+}
+
+.proef2-subtitel {
+  margin-top: -50px;
+}
+
+.proef2-icon1 {
+  width: 96px;
+  height: 96px;
+  margin-top: 4px;
+}
+
+.proef2-icon {
+  width: 96px;
+  height: 96px;
+  margin-top: 32px;
+}
+
+/* ------------------------------------
+   Proef 3 Sectie 
+------------------------------------ */
+.proef3-section {
+  background-image: url("Images/Achtergronden/Achtergrond3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0;
+  width: 100%;
+  min-height: 110vh;
+  position: relative;
+  margin-top: 90px;
+}
+
+.proeftitel3 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-left: 200px;
+  margin-top: 120px;
+}
+
+.proef3-titel {
+  margin-top: 30px;
+}
+
+.proef3-image {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+}
+
+.werkwaarden-img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 360px;
+  margin-right: -100px;
+}
+
+.bottom-text4 {
+  flex: 1;
+  padding: 24px;
+  margin-left: 100px;
+  margin-top: 290px;
+}
+
+.bottom-text4 p {
+  width: 650px;
+  text-align: left;
+}
+
+/* ------------------------------------
+   Proef 4 Sectie
+   -------------------------------- */
+.proef4-block {
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 12px;
+  text-align: center;
+  width: 1400px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.proef3-icon1 {
+  width: 96px;
+  height: 96px;
+  margin-top: 64px;
+}
+
+.proef3-icon2 {
+  width: 96px;
+  height: 96px;
+  margin-top: 32px;
+}
+
+.proef3-icon3 {
+  width: 110px;
+  height: 96px;
+  margin-top: 32px;
+}
+
+.bottom-text5 {
+  flex: 1;
+  padding: 24px;
+  margin-left: 32px;
+  margin-top: 120px;
+}
+
+/* ------------------------------------
+   Extra Layouts & Visuals
+------------------------------------ */
+.main-info-row {
+  display: flex;
+  gap: 128px;
+  margin: 32px 32px;
+}
+
+.main-info-half {
+  flex: 1;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: #f5e0ce;
+  position: relative;
+  height: 700px;
+}
+
+.motto {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.motto2 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-top: 20px;
+  width: 240px;
+}
+
+.main-info-half,
+.bottom-text,
+.conclusion-block {
+  background: #f6ece3;
+  box-shadow: none;
+}
+
+.conclusion-block {
+  background: #fff;
+  margin: 32px;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  font-size: 1.15em;
+}
+
+.genz-img {
+  position: absolute;
+  right: -180px;
+  bottom: -150px;
+  width: 710px;
+  height: auto;
+  z-index: 2;
+}
+
+.genz-text {
+  width: 550px;
+}
+
+.genx-img {
+  position: absolute;
+  right: -90px;
+  bottom: -180px;
+  width: 710px;
+  height: auto;
+  z-index: 2;
+}
+
+.graph-iframe {
+  width: 100%;
+  max-width: 1500px;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+}
+
+.graph-block4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1010px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 64px;
+}
+
+/* ------------------------------------
+   Footer
+------------------------------------ */
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 32px;
+  font-size: 1em;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.stats-row a {
+  text-decoration: none;
+  color: #5c4633;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
