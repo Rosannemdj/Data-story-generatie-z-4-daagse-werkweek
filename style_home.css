@@ -63,9 +63,17 @@ h3 {
 .introplaatje {
   position: relative;
   z-index: -1;
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
   margin-top: 100px;
+}
+
+.introplaatje2 {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+  height: auto;
+  margin-top: 130px;
 }
 
 /* ------------------------------------
@@ -280,11 +288,11 @@ introductie van de kampen
   flex: 1;
   padding: 24px;
   margin-left: 32px;
-  margin-top: 150px;
+  margin-top: 330px;
 }
 
 .bottom-text3 p {
-  width: 600px;
+  width: 900px;
   text-align: left;
 }
 
@@ -361,6 +369,8 @@ introductie van de kampen
   font-weight: bold;
   color: #5c4633;
   margin-bottom: 32px;
+  width: 600px;
+  margin-left: 100px;
 }
 
 .graph-img {
@@ -700,4 +710,104 @@ html {
 #scrollTopBtn:hover {
   background-color: #b68a6c; /* iets donkerder bij hover */
   transform: scale(1.1);
+}
+
+/* Achterliggende Data – unieke styling */
+
+.source-section,
+.source-block {
+  font-family: "Roboto", sans-serif;
+  color: #5c4633;
+  background: #fff;
+  border-radius: 14px;
+  padding: 64px;
+  margin: 128px auto;
+  max-width: 950px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+/* hoofdtitel */
+.source-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 46px;
+  color: #5c4633;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* subtitels */
+.source-block h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.source-block h4 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+/* kleuraccenten per proef */
+.tone-1 {
+  border-left: 10px solid #f5e0ce;
+  background: #fffaf6;
+}
+
+.tone-2 {
+  border-left: 10px solid #d1b69e;
+  background: #fffbf8;
+}
+
+.tone-3 {
+  border-left: 10px solid #b68a6c;
+  background: #fffaf7;
+}
+
+.tone-4 {
+  border-left: 10px solid #a4785c;
+  background: #fff8f5;
+}
+
+/* literatuurlijst */
+.source-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+
+.source-list li {
+  margin-bottom: 10px;
+}
+
+.source-list a {
+  color: #b68a6c;
+  text-decoration: none;
+}
+
+.source-list a:hover {
+  text-decoration: underline;
+  color: #5c4633;
+}
+
+/* hover animatie */
+.source-block:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  transition: all 0.25s ease;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .source-title {
+    font-size: 36px;
+  }
+
+  .source-block,
+  .source-section {
+    padding: 22px;
+    margin: 20px;
+  }
 }

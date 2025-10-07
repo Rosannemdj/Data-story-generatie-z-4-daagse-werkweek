@@ -4,16 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_home.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#proeven">De verschillende proeven</a></li>
+        <li><a href="Achterliggende_data.html "> Achterliggende data</a></li>
+      </ul>
+    </nav>
+
+    <!--header-->
     <div class="header rounded-header">
       <img
         src="Images/Achtergronden/Achtergrond.png"
         alt="Achtergrond"
         class="header-bg"
       />
+      <div class="header-text">
+        <h1 id="titel">De achterliggende data</h1>
+        <h3>De cijfers achter de koffie</h3>
+        <p class="header-text">
+          Deze pagina geeft inzicht in de herkomst van de datasets achter de vier proeven.
+    De gebruikte cijfers komen uit officiële publicaties van onder meer TNO, RIVM,
+    Trimbos, OECD en 4 Day Week Global. Alle tabellen zijn zorgvuldig overgenomen
+    of omgerekend naar een gestandaardiseerd CSV-formaat, zodat ze visueel inzetbaar
+    zijn binnen deze datastory. Per proef lees je hieronder welke bronnen, tabellen
+    en pagina’s zijn gebruikt.
+        </p>
+      </div>
+      <img src="Images/data.png" alt="" class="introplaatje2" />
     </div>
+  
+<!-- PROEF 1 -->
+<section class="source-block tone-1">
+  <h3>Proef 1 – Mentale Gezondheid</h3>
+  <p><strong>Grafieken:</strong>  
+    <br></br>
+    1. Behoefte aan mentale ondersteuning per generatie  <br></br>
+    2. Achterliggende oorzaken waarom Gen Z meer ondersteuning zoekt.
+  </p>
+  <p><strong>Verantwoording:</strong><br>
+    De eerste grafiek is gebaseerd op de NEA-tabellen over maatregelen tegen werkdruk en stress
+    (p. 32–33). De categorieën “wel nodig maar onvoldoende” en “wel nodig maar nog geen maatregelen”
+    zijn samengevoegd tot één totaalpercentage per generatie. De tweede grafiek verdiept dit beeld
+    met cijfers en interpretaties uit RIVM- en Trimbos-onderzoeken (2023) en de GGZ-publicatie (2025),
+    die wijzen op prestatiedruk, digitale stress en onzekerheid over de toekomst. Zo tonen de grafieken samen waarom Gen Z vaker mentale ondersteuning zoekt dan oudere generaties.
+  </p>
+  <h4>Bronnenlijst</h4>
+  <ul class="source-list">
+    <li>TNO &amp; CBS. (2023). <em>Nationale Enquête Arbeidsomstandigheden 2023 – Resultaten (NEA)</em>. 
+      <a href="https://www.monitorarbeid.tno.nl/nea" target="_blank">https://www.monitorarbeid.tno.nl/nea</a>
+    </li>
+    <li>RIVM &amp; Trimbos Instituut. (2023). <em>Cijferrapportage Monitor Mentale Gezondheid 2023 – Eerste landelijke overzicht</em>. 
+      <a href="https://www.rivm.nl/publicaties/cijferrapportage-monitor-mentale-gezondheid-2023-eerste-landelijke-overzicht" target="_blank">link</a>
+    </li>
+    <li>De Nederlandse GGZ. (2025). <em>Toekomstperspectief op een mentaal gezonder 2035</em>. 
+      <a href="https://www.denederlandseggz.nl/nieuws/2025/toekomstperspectief-mentaal-gezonder-2035" target="_blank">link</a>
+    </li>
+    <li>Psycholoog op Afstand. (2023). <em>Generatie Z vraagt meer psychische hulp dan andere generaties</em>. 
+      <a href="https://www.psycholoogopafstand.nl/generatie-z-vraagt-meer-psychische-hulp-dan-andere-generaties/" target="_blank">link</a>
+    </li>
+  </ul>
+</section>
+
+<!-- PROEF 2 -->
+<section class="source-block tone-2">
+  <h3>Proef 2 – Productiviteit</h3>
+  <p><strong>Grafieken:</strong>  
+    1. Productiviteit van Gen Z en Gen X 
+      <br></br> 
+    2. AI in de werktas – technologie en werkdruk.
+  </p>
+  <p><strong>Verantwoording:</strong><br>
+    De eerste grafiek vergelijkt de ontwikkeling van productiviteit tussen Gen Z en Gen X op basis van de
+    NEA-cijfers (TNO &amp; CBS, 2023). De gegevens over bevlogenheid, werktevredenheid en overuren zijn afgeleid van
+    tabellen 4.8 (p. 46–47), 5.2 (p. 61–62) en 5.3 (p. 64–65). Omdat de NEA leeftijd 25–54 jaar combineert, zijn gemiddelden per generatie berekend en in de CSV verwerkt.  
+    De tweede grafiek, “AI in de werktas”, baseert zich op inzichten uit TNO- en RIVM-rapporten (2025) en het TNO-onderzoek van Bonte (2022), die tonen hoe AI het werk kan verlichten maar ook intensiveren. Beide grafieken laten zien hoe technologie de moderne werkdag verandert en hoe balans tussen mens en machine belangrijk blijft.
+  </p>
+  <h4>Bronnenlijst</h4>
+  <ul class="source-list">
+    <li>TNO &amp; CBS. (2023). <em>Nationale Enquête Arbeidsomstandigheden 2023 – Resultaten (NEA)</em>. 
+      <a href="https://www.monitorarbeid.tno.nl/nea" target="_blank">https://www.monitorarbeid.tno.nl/nea</a>
+    </li>
+    <li>TNO &amp; RIVM. (2025, januari). <em>AI als kans en risico voor arbeidsomstandigheden</em>. 
+      <a href="https://www.tno.nl/nl/newsroom/2025/01/tno-rivm-ai-kans-risico/" target="_blank">link</a>
+    </li>
+    <li>Bonte, R. (2022). <em>Verkenning gevolgen van het werken met AI.</em> TNO. 
+      <a href="https://publications.tno.nl/publication/34639633/gtiVfM/bonte-2022-verkenning.pdf" target="_blank">link</a>
+    </li>
+  </ul>
+</section>
+
+<!-- PROEF 3 -->
+<section class="source-block tone-3">
+  <h3>Proef 3 – De Ervaring </h3>
+  <p><strong>Grafiek:</strong> Resultaten van internationale vierdaagse-werkweekpilots.</p>
+  <p><strong>Verantwoording:</strong><br>
+    De dataset combineert resultaten uit pilots in het VK, IJsland, Spanje en Australië. Gemiddelden van stressafname (≈ 39 %), verbeterd werkvermogen (≈ 24 %) en ziekteverzuimafname (≈ 60–65 %) zijn gebruikt. 92 % van de bedrijven zette het beleid voort. De data komt uit rapporten van 4 Day Week Global (2022–2023) en is aangevuld met inzichten van TNO en OECD.
+  </p>
+  <h4>Bronnenlijst</h4>
+  <ul class="source-list">
+    <li>4 Day Week Global. (2023). <em>UK Pilot Results: The world’s largest four-day week trial.</em> 
+      <a href="https://www.4dayweek.com/uk-results" target="_blank">link</a>
+    </li>
+    <li>4 Day Week Global. (2022). <em>Pilot overview and international impact report.</em> 
+      <a href="https://www.4dayweek.com/research" target="_blank">link</a>
+    </li>
+    <li>OECD. (2023). <em>Working time, productivity and well-being after COVID-19.</em> 
+      <a href="https://www.oecd.org/employment" target="_blank">link</a>
+    </li>
+    <li>Reykjavik City Council &amp; Icelandic Government. (2021). <em>The Icelandic Trials of a Shorter Working Week.</em> 
+      <a href="https://autonomy.work/portfolio/iceland" target="_blank">link</a>
+    </li>
+  </ul>
+</section>
+
+<!-- PROEF 4 -->
+<section class="source-block tone-4">
+  <h3>Proef 4 – Werkvormen (Thuiswerken)</h3>
+  <p><strong>Grafiek:</strong> Ontwikkeling van thuiswerken, werkdruk en productiviteit (2019 – 2023).</p>
+  <p><strong>Verantwoording:</strong><br>
+    Deze grafiek toont de verschuiving van kantoor naar hybride werken tussen 2019 en 2023. De waarden zijn afgeleid van TNO- en RIVM-rapporten over digitale samenwerking en psychosociale belasting. De artikelen van Baaz (2025) en NRC (2024) geven maatschappelijke context aan de verandering in werkcultuur en vertrouwen.
+  </p>
+  <h4>Bronnenlijst</h4>
+  <ul class="source-list">
+    <li>TNO &amp; RIVM. (2025, januari). <em>AI als kans en risico voor arbeidsomstandigheden</em>. 
+      <a href="https://www.tno.nl/nl/newsroom/2025/01/tno-rivm-ai-kans-risico/" target="_blank">link</a>
+    </li>
+    <li>RIVM &amp; TNO. (2024). <em>De impact van maatschappelijke ontwikkelingen op de psychosociale arbeidsbelasting van werkenden</em>. 
+      <a href="https://monitorarbeid.tno.nl/wp-content/uploads/sites/16/2024/03/MV-2024-0008-Rapport-De-impact-van-maatschappelijke-ontwikkelingen-op-de-psychosociale-arbeidsbelasting-van-werkenden-2024-0020.pdf" target="_blank">link</a>
+    </li>
+    <li>Baaz. (2025, 10 september). <em>Volledige of vierdaagse werkweek: wat werkt?</em> 
+      <a href="https://www.baaz.nl/volledige-of-vierdaagse-werkweek-wat-werkt" target="_blank">link</a>
+    </li>
+    <li>NRC. (2024, 3 november). <em>Generatie X tussen traditie en vernieuwing</em>. 
+      <a href="https://www.nrc.nl/nieuws/2024/11/03/generatie-x-tussen-traditie-en-vernieuwing-a4178293" target="_blank">link</a>
+    </li>
+  </ul>
+</section>
+
+
+    </section>
+<!--
     <p>
       Psycholoog op Afstand. (2023). Generatie Z vraagt meer psychische hulp dan
       andere generaties. Geraadpleegd op 23 september 2025, van
@@ -50,6 +184,6 @@
       TNO & UWV. (2017). Nieuwe technologie en werk: een verkennend onderzoek.
       Geraadpleegd op 1 oktober 2025, van
       https://www.uwv.nl/assets/files/d304e939-a65f-4176-927e-52bf1983ab9c/nieuwe-technologie-en-werk-een-verkennend-onderzoek-voor-uwv.pdf
-    </p>
+    </p>-->
   </body>
 </html>
