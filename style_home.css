@@ -599,8 +599,19 @@ introductie van de kampen
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
   display: block;
+}
+
+.graph-block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1010px;
+  height: 800px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 64px;
 }
 
 .graph-block4 {
