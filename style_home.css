@@ -519,7 +519,11 @@ introductie van de kampen
   font-weight: bold;
   color: #5c4633;
   margin-left: 200px;
-  margin-top: 120px;
+  margin-top: 20px;
+}
+
+#proef3 {
+  margin-top: 200px;
 }
 
 .proef3-titel {
@@ -571,6 +575,7 @@ introductie van de kampen
   background-color: #ffffff;
   z-index: 2;
   margin-bottom: 20px;
+  margin-right: 32px;
 }
 
 .proef3-icon1 {
@@ -769,6 +774,7 @@ html {
 .tone-4 {
   border-left: 10px solid #a4785c;
   background: #fff8f5;
+  margin-bottom: 350px;
 }
 
 /* literatuurlijst */
