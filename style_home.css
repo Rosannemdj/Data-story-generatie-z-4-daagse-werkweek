@@ -260,7 +260,7 @@ introductie van de kampen
 
 .bottom-text {
   flex: 1;
-  background: #fff;
+  background-color: #f5e0ce;
   padding-top: 24px;
   padding-right: 24px;
   padding-left: 24px;
@@ -521,6 +521,12 @@ introductie van de kampen
   text-align: right;
   display: flex;
   justify-content: center;
+}
+
+.pilot-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 390px;
 }
 
 .werkwaarden-img {
