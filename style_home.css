@@ -678,3 +678,26 @@ html {
   margin-bottom: -400px;
   z-index: 2;
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* links onder */
+  background-color: #d1b69e; /* jouw warme beige kleur */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  font-family: "Fredoka", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+#scrollTopBtn:hover {
+  background-color: #b68a6c; /* iets donkerder bij hover */
+  transform: scale(1.1);
+}
