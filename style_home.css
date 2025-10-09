@@ -124,6 +124,13 @@ introductie van de kampen
   height: 700px;
 }
 
+.leeftijd {
+  text-align: left;
+  font-size: 1em;
+  color: #5c4633;
+  margin-top: 20px;
+}
+
 .motto {
   text-align: left;
   font-size: 2.5em;
@@ -369,6 +376,14 @@ introductie van de kampen
   font-weight: bold;
   color: #5c4633;
   margin-bottom: 32px;
+}
+
+.uitspraak {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #5c4633;
+  margin-bottom: 32px;
   width: 600px;
   margin-left: 100px;
 }
@@ -397,6 +412,20 @@ introductie van de kampen
   color: #555;
   margin-top: 8px;
   width: 400px;
+}
+
+.graph-source2 {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 8px;
+  width: 900px;
+}
+
+.graph-source3 {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 8px;
+  width: 600px;
 }
 
 /* ------------------------------------
